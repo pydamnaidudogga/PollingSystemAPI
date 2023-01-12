@@ -8,6 +8,7 @@ module.exports.display = async function(req, res){
         // finding the question
         let question = await Question.findById(req.body.id);
         // finding the option
+        if(question){
         let option = await Option.find({});
     
         
@@ -33,12 +34,19 @@ module.exports.display = async function(req, res){
 
                 
         });
+    }else{
+        return res.status(200).send({
+            message :'the queastion is not found'
+        })
+    }
             
 
         
     }catch(err){
-        
-        return;
+        console.log(err);
+        return res.status(200).send({
+            message:'the queastion is not found'
+        });
     }
     
 }

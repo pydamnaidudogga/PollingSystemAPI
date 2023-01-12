@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>Polling System API</title>
+        <link rel="stylesheet" href="./assets/css/home.css">
+      
+    </head>
+    <body>
+        <div id="heading-div">
+            <h1 id="heading">Polling System API</h1>
+        </div>
+        <main id="main-contant">
+            <h3 id="sub-heading">This api is used to create the questions and options to voting </h3>
+            <p>
+                <ul id="contant-list">
+                    <li>
+                        CREATE A QUESTION
+                    </li>
+                    <li>
+                        DELETE A QUESTION
+                    </li>
+                    <li>
+                        VIEW A QUESTION
+                    </li>
+                    <li>
+                        CREATE OPTION
+                    </li>
+                    <li>
+                        DELETE OPTION
+                    </li>
+                    <li>
+                        ADDING VOTE
+                    </li>
+
+                </ul>
+            </p>
+            <div>
+                <p>
+                    <h6 class="operations-list">GET QUESTION</h6>
+                    <P class="operations-list links">POST(http://localhost:8000/questions/:id)</P>
+                </p>
+                <p>
+                    <h6 class="operations-list">CREATE QUESTION</h6>
+                    <P class="operations-list links">POST(http://localhost:8000/questions/create)</P>
+                </p>
+                <p>
+                    <h6 class="operations-list">DELETE QUESTION</h6>
+                    <P class="operations-list links">POST(http://localhost:8000/questions/:id/delete)</P>
+                </p>
+                <p>
+                    <h6 class="operations-list">CREATE OPTION</h6>
+                    <P class="operations-list links" >POST(http://localhost:8000/questions/:id/options/create)</P>
+                </p>
+                <p>
+                    <h6 class="operations-list">DELETE OPTION</h6>
+                    <P class="operations-list links" >POST(http://localhost:8000/options/:id/delete)</P>
+                </p>
+                <p>
+                    <h6 class="operations-list">ADD VOTE TO AN OPTION</h6>
+                    <P class="operations-list links" >GET(http://localhost:8000/options/:id/add_vote)</P>
+                </p>
+            </div>
+
+
+        </main>
+        
+    </body>
+</html>
