@@ -36,7 +36,7 @@ Install my-project with npm
 #### Delete a question
 
 ```http
-  POST /questions/:id/delete
+  DELETE /questions/:id/delete
 ```
 
 | Parameter | Type     | 
@@ -57,7 +57,7 @@ Install my-project with npm
 #### Delete a option
 
 ```http
-  POST /options/:id/delete
+  DELETE /options/:id/delete
 ```
 | Parameter | Type     | 
 | :-------- | :------- | 
