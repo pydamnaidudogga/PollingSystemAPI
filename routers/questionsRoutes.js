@@ -15,7 +15,7 @@ router.post('/:id',viewQuestion.display);
 // the below router is used to create the options 
 router.post('/:id/options/create',createOptions.create);
 // the below router is used to delete the question (A question can’t be deleted if one of it’s options has votes)
-router.post('/:id/delete',deleteQestion.destroy);
+router.delete('/:id/delete',deleteQestion.destroy);
 
 
 module.exports = router;
